@@ -1,0 +1,59 @@
+[user-account]
+;配置账号密码，留空则打开网页后需手动登录
+username =
+password =
+
+[browser-option]
+;配置浏览器,可选 Edge 或 Chrome
+driver = Edge
+;指定浏览器所在路径,不填则使用默认路径
+EXE_PATH =
+
+[script-option]
+;是否自动过登录时的滑块验证(默认:True)
+enableAutoCaptcha = True
+;运行时不显示浏览器窗口(默认:False)
+;注意: 这里的"隐藏"是把窗口缩到最小尺寸并移到屏幕左下角之外,
+;      不是最小化/隐藏窗口, 窗口仍处于正常状态, 播放不会被打断;
+;      需要安全验证时会自动恢复原尺寸并移回原来的位置。
+enableHideWindow = False
+;是否展示赞赏码(默认:True)
+showDonateCode = True
+;界面启动时是否自动安装缺失的第三方库(默认:True, 离线环境可改为 False)
+autoInstallDeps = True
+;开机自动启动的两种形态(界面上已合并成一个开关, 这里固定为 True)
+;开机那次只显示工作区左下角的小窗, 并在界面就绪后直接开始刷课
+startupMiniWindow = True
+startupAutoRun = True
+;配合"开机自动启动": 每天累计刷满多少分钟后不再自启动(默认:60, 0 表示不限制)
+;只累计真正在刷课的时间(含失败重试等待), 空闲/停在配置页/程序没开都不算;
+;当天达到上限后再开机就静默跳过, 手动双击启动不受限制
+startupDailyLimitMinutes = 60
+
+[course-option]
+;限制每门课程刷课时长/min (不限制:0)
+limitMaxTime = 30
+;限定播放倍速 (最高:1.8)
+limitSpeed = 1.0
+;设置是否静音播放 (默认:True)
+soundOff = True
+;课程所有课时都已完成时是否直接跳到下一个课程链接 (默认:True)
+;改为 False 则维持旧行为: 整门课进入复习模式重播, 直到达到 limitMaxTime
+skipCompletedCourse = True
+
+[course-url]
+;配置要学习的课程链接,支持(智慧)共享课
+;可继续添加多个课程链接
+URL1 =
+URL2 =
+URL3 =
+URL4 =
+URLn =
+
+[restart]
+;是否启用失败自动重启(默认:True)
+;启用后,运行异常或课时未被平台确认完成时,按下面的阶梯表自动重试
+enableRestart = True
+;每次重试前的等待秒数(逗号分隔), 表长度 = 重试次数
+;默认 6 次等待 → 共 7 次尝试, 累计等待 100 秒; 留空表示失败即停不重试
+backoffSchedule = 10,10,10,20,20,30
