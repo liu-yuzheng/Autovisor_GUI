@@ -1,26 +1,50 @@
+# ============================================================
+# Autovisor 仓库忽略规则
+# 用法: 分组书写, 同组内按"先通配、后例外"的顺序排列
+# ============================================================
+
+# ---------- Python 运行产物 ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# ---------- 打包与构建产物 ----------
 build/
 dist/
-packages/*
+*.spec
+*.zip
+
+# ---------- 运行时依赖与临时数据 ----------
+# packages/ 由 modules/installer.py 首次遇到验证码时自动下载(cv2/numpy/libzbar)
+packages/
+# 登录态、验证码截图、运行日志、macOS 部署标记
 data/*
-resources/*
 !data/mirrors.json
+captcha/
+.autovisor/
+logs/
+preview/
+
+# ---------- 本地配置(含账号密码, 严禁提交) ----------
+config.ini
+config.macos.ini
+config.local.ini
+
+# ---------- 资源目录: 只保留运行必需的文件 ----------
+resources/*
 !resources/QRcode.jpg
 !resources/stealth.min.js
 !resources/zhs.ico
 !resources/markdown/
-.obsidian/
+
+# ---------- 编辑器与本地工作目录 ----------
 .idea/
-__pycache__/
 .vscode/
-.venv/
-config.ini
-config.macos.ini
-.autovisor/
-captcha/
-logs/
-./preview/*
-*.egg-info/
-.pytest_cache/
-generated-images/
+.obsidian/
 .workbuddy/
-*.zip
+generated-images/

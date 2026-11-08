@@ -1,6 +1,6 @@
 ##  Autovisor
 
-**Github项目主页：**[CXRunfree/Autovisor](https://github.com/CXRunfree/Autovisor)
+**Github项目主页：**[liu-yuzheng/Autovisor](https://github.com/liu-yuzheng/Autovisor)（上游项目：[CXRunfree/Autovisor](https://github.com/CXRunfree/Autovisor)）
 
 ------
 #### 2026/11/8 公告
@@ -61,10 +61,10 @@
 
 #### 三、发行版下载
 
-- Github: [Releases · CXRunfree/Autovisor](https://github.com/CXRunfree/Autovisor/releases)
-- 网盘备用: [蓝奏云 · Autovisor-for-windows](https://wwbuo.lanzouq.com/b01i5zscwd) 密码: 492l
+- Github: [Releases · liu-yuzheng/Autovisor](https://github.com/liu-yuzheng/Autovisor/releases/tag/test)
+- 网盘备用: [蓝奏云 · Autovisor_GUI-for-windows](https://wwbuo.lanzouq.com/b01i5zscwd) 密码: 492l
 
-这是已经打包好的程序, 若需要**源代码**请于 Github 项目主页下载.
+这是已经打包好的程序, 若需要**源代码**请于 [Github 项目主页](https://github.com/liu-yuzheng/Autovisor)下载.
 
 ***---------测试环境为Windows11，edge浏览器，共享课，以下仅供参考---------***
 
