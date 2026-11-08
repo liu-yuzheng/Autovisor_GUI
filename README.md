@@ -61,12 +61,12 @@
 
 #### 三、发行版下载
 
-- Github: [Releases · liu-yuzheng/Autovisor](https://github.com/liu-yuzheng/Autovisor/releases/tag/test)
+- Github: [Releases · liu-yuzheng/Autovisor](https://github.com/liu-yuzheng/Autovisor_GUI/tree/main)
 - 网盘备用: [蓝奏云 · Autovisor_GUI-for-windows](https://wwbuo.lanzouq.com/b01i5zscwd) 密码: 492l
 
-这是已经打包好的程序, 若需要**源代码**请于 [Github 项目主页](https://github.com/liu-yuzheng/Autovisor)下载.
+这是已经打包好的程序, 若需要**源代码**请于 [Github 项目主页](https://github.com/liu-yuzheng/Autovisor_GUI/tree/main)下载.
 
-***---------测试环境为Windows11，edge浏览器，共享课，以下仅供参考---------***
+***-------测试环境为Windows11，edge浏览器，共享课，其他环境可能会不适配，以下仅供参考-------***
 
 #### 四、图形界面
 
